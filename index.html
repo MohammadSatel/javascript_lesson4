@@ -4,30 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>javascript </title>
 </head>
 
 <body>
-    <h1>javascript training</h1>
-    <script>
 
-        let user = "mohammadSatel"
-        let x = 9
+    <div id="d1">
+        <button onclick="newButton()">New button</button>
+    </div>
+
+    <script>
+        let userName = "Mohammad"
+        let userLast = "Satel"
+
+        function myName() {
+            console.log(userName);
+        }
+        function myLast() {
+            console.log(userLast);
+        }
+        function fullName() {
+            console.log(userName, userLast);
+        }
+        function newButton() {
+            d1.innerHTML += '<button>add name</button>'
+        }
+    </script>
+
+    <button onclick="myName()">first name</button>
+    <br>
+    <button onclick="myLast()">last name</button>
+    <br>
+    <button onclick="fullName()">Full name</button>
+    <br>
+
+    <script>
+        let x = 1
         let y = 5
 
-        function add() {
-            console.log(user)
-            console.log(user)
+        if (x > y) {
+            console.log("5");
         }
-        function add1() {
-console.log(x)
-console.log(y)
-console.log(x+y);
+        else {
+            console.log("4");
         }
-add()
-add1()
-
-
     </script>
 
 </body>
